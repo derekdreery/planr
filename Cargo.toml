@@ -1,0 +1,17 @@
+[package]
+name = "juniper-example"
+version = "0.1.0"
+authors = ["Richard Dodd <richard.o.dodd@gmail.com"]
+edition = "2018"
+
+[dependencies]
+actix-web = "1.0.0"
+env_logger = "0.6"
+futures = "0.1"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+juniper = { version = "0.12", features = ["chrono"] }
+diesel = { version = "1.4.3", features = ["postgres", "chrono", "r2d2"] }
+dotenv = "0.14.1"
+chrono = "0.4.9"
